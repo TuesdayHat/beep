@@ -19,7 +19,7 @@ function beep(num){
     numbers.push(i)
   }
 
-  return numbers.join(' ')
+  return numbers
 }
 
 
@@ -31,7 +31,9 @@ $(document).ready(function() {
     var input = parseInt($("#INPUT").val());
     var result = beep(input);
 
-    $("#result").text(result);
+    for (var k = 0; k<result.length; k++){
+      $("#result").append(result[k] + "</br>");
+    }
 
   });
 });
