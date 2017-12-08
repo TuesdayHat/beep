@@ -2,6 +2,8 @@ function beepCheck(num){
   var check = num;
   if (check === 1){
     return "Beep!"
+  } else if (check === 0) {
+    return "Boop!"
   }
 
   return check
