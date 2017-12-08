@@ -1,14 +1,17 @@
 function beepCheck(num){
-  var check = num;
-  var checkStr = check.toString();
-  console.log(checkStr);
-  if (check === 1 || checkStr[0] === "1"){
-    return "Beep!" ;
-  } else if (check === 0 || checkStr[0] === "0") {
+  var checkStr = num.toString();
+  var match = checkStr.match(/[01]/);
+
+  if (num % 3 === 0) {
+    return "I'm sorry, Dave. I can't let you do that" ;
+  } else if (match[0] === "1") {
     return "Boop!" ;
+  } else if (match[0] === "0") {
+    return "Beep!" ;
+  } else {
+    return num ;
   }
 
-  return check ;
 }
 
 

@@ -25,7 +25,7 @@ A website that takes in a number and displays a count of all numbers up to the i
 1. Run in Browser
 
 ## Known Bugs
-* Code Does Not Exist Yet
+* Code Does Not Exist
 
 ##Technologies Used
 * JS
