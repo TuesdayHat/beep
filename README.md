@@ -19,14 +19,14 @@ A website that takes in a number and displays a count of all numbers up to the i
 |**Count up to input number**| 5 | [0, 1, 2, 3, 4, 5] |
 |**Run all replacement logic on each member of the list of numbers**| 5 | "Beep!", "Boop!", "2", "I'm sorry, Dave. I can't let you do that", "4", "5" |
 
-#Setup/Installation
+# Setup/Installation
 
 1. Run in Browser
 
 ## Known Bugs
 * None at this time.
 
-##Technologies Used
+## Technologies Used
 * JS
   * jQuery 3.2.1
 * HTML
