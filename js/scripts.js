@@ -1,12 +1,14 @@
 function beepCheck(num){
   var check = num;
-  if (check === 1){
-    return "Beep!"
-  } else if (check === 0) {
-    return "Boop!"
+  var checkStr = check.toString();
+  console.log(checkStr);
+  if (check === 1 || checkStr[0] === "1"){
+    return "Beep!" ;
+  } else if (check === 0 || checkStr[0] === "0") {
+    return "Boop!" ;
   }
 
-  return check
+  return check ;
 }
 
 
