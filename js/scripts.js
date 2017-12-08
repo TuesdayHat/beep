@@ -1,12 +1,14 @@
 function beepCheck(num){
+  //debugger;
   var checkStr = num.toString();
-  var match = checkStr.match(/[01]/);
+  var match = checkStr.search(/[01]/);
+  console.log(match + " ---- " + num);
 
   if (num % 3 === 0) {
     return "I'm sorry, Dave. I can't let you do that" ;
-  } else if (match[0] === "1") {
+  } else if (checkStr.search(/1/) > -1) {
     return "Boop!" ;
-  } else if (match[0] === "0") {
+  } else if (checkStr.search(/0/) > -1) {
     return "Beep!" ;
   } else {
     return num ;
@@ -16,7 +18,7 @@ function beepCheck(num){
 function beep(num){
   var numbers = [];
   for (var i=0; i<=num; i++){
-    numbers.push(i)
+    numbers.push(beepCheck(i))
   }
 
   return numbers
