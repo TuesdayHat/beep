@@ -20,7 +20,6 @@ function beep(num){
   return numbers
 }
 
-
 //FRONTEND BELOW THIS LINE ===--------------------------------
 
 $(document).ready(function() {
@@ -31,6 +30,10 @@ $(document).ready(function() {
     var name = $("#name").val();
 
     $("#result").empty();
+     $("input:checkbox[id=reverse]:checked").each(function(){
+      result = result.reverse();
+     });
+
 
     for (var k = 0; k<result.length; k++){
       if(result[k] === "hal"){
