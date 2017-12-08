@@ -1,20 +1,23 @@
-# Name
+# Beep Boop
 
-#### A Tagline
+#### It's totally not fizzBuzz!
 
 #### By Adam Calhoun
 
 ## Description
 
-...
+A website that takes in a number and displays a count of all numbers up to the input, with some replaced with "Beep!" or "Boop!"
 
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-|**.**|  |  |
-|****|  |  |
-|****|  |  |
-|****|  |  |
+|**1 is replaced with "Boop!"**| 1 | "Boop!" |
+|**0 is replaced with "Beep!"**| 0 | "Beep!" |
+|**A number of any length beginning with 0 or 1 gets replaced**| 100 , 003271 | "Boop!", "Beep!" |
+|**A number of any length with a 1 or 0 at any point gets replaced**| 314, 60 | "Boop!", "Beep!" |
+|**A number divisible by 3 is replaced with "I'm sorry, Dave. I can't let you do that."**| 9 | "'m sorry, Dave. I can't let you do that." |
+|**Count up to input number**| 5 | [0, 1, 2, 3, 4, 5] |
+|**Run all replacement logic on each member of the list of numbers**|  |  |
 |****|  |  |
 
 #Setup/Installation
