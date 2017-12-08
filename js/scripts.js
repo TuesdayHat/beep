@@ -11,7 +11,15 @@ function beepCheck(num){
   } else {
     return num ;
   }
+}
 
+function beep(num){
+  var numbers = [];
+  for (var i=0; i<=num; i++){
+    numbers.push(i)
+  }
+
+  return numbers.join(' ')
 }
 
 
@@ -21,7 +29,7 @@ $(document).ready(function() {
   $("#FORM").submit(function(event) {
     event.preventDefault();
     var input = parseInt($("#INPUT").val());
-    var result = beepCheck(input);
+    var result = beep(input);
 
     $("#result").text(result);
 
