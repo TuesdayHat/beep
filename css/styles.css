@@ -4,11 +4,12 @@ body {
 }
 
 #result {
-  margin: 50px;
+  margin-left: 50px;
   font-size: 30px;
 }
 
 form {
   margin: 0 auto;
-  width: 25%;
+  margin-top: 75px;
+  width: 80%;
 }

@@ -17,15 +17,14 @@ A website that takes in a number and displays a count of all numbers up to the i
 |**A number of any length with a 1 or 0 at any point gets replaced**| 314, 60 | "Boop!", "Beep!" |
 |**A number divisible by 3 is replaced with "I'm sorry, Dave. I can't let you do that."**| 9 | "'m sorry, Dave. I can't let you do that." |
 |**Count up to input number**| 5 | [0, 1, 2, 3, 4, 5] |
-|**Run all replacement logic on each member of the list of numbers**|  |  |
-|****|  |  |
+|**Run all replacement logic on each member of the list of numbers**| 5 | "Beep!", "Boop!", "2", "I'm sorry, Dave. I can't let you do that", "4", "5" |
 
 #Setup/Installation
 
 1. Run in Browser
 
 ## Known Bugs
-* Code Does Not Exist
+* None at this time.
 
 ##Technologies Used
 * JS
