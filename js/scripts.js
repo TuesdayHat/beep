@@ -2,11 +2,11 @@ function beepCheck(num){
   var checkStr = num.toString(); // turns input into a string
 
   if (num % 3 === 0 && num/3 >= 1) {
-    return "I'm sorry, Dave. I can't let you do that" ;
+    return "hal" ;
   } else if (checkStr.search(/1/) > -1) { //looks for the number 1 in the string
-    return "Boop!" ;
+    return "1" ;
   } else if (checkStr.search(/0/) > -1) {
-    return "Beep!" ;
+    return "0" ;
   } else {
     return num ;
   }
@@ -26,13 +26,22 @@ function beep(num){
 $(document).ready(function() {
   $("#FORM").submit(function(event) {
     event.preventDefault();
-    var input = parseInt($("#INPUT").val());
+    var input = parseInt($("#number").val());
     var result = beep(input);
+    var name = $("#name").val();
 
     $("#result").empty();
 
     for (var k = 0; k<result.length; k++){
-      $("#result").append(result[k] + "</br>");
+      if(result[k] === "hal"){
+        $("#result").append("I'm Sorry, "+ name + ". " + "I can't let you do that" +"</br>");
+      } else if (result[k] === "1") {
+        $("#result").append("Boop!" + "</br>");
+      } else if (result[k] === "0") {
+        $("#result").append("Beep!" + "</br>");
+      } else {
+        $("#result").append(result[k] + "</br>");
+      }
     }
 
   });
